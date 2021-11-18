@@ -19,7 +19,7 @@
                 "STARTTLS": on normal plain port and mandatory upgrade to TLS via STARTTLS
                 -->
          <socketType>SSL</socketType>
-         <username>%EMAILLOCALPART%</username>
+         <username>%EMAILADDRESS%</username>
             <!-- Authentication methods:
                  "password-cleartext",
                           Send password in the clear
@@ -53,7 +53,7 @@
          <hostname>smtppro.zoho.com</hostname>
          <port>465</port>
          <socketType>SSL</socketType> <!-- see <incomingServer> -->
-         <username>%EMAILLOCALPART%</username> <!-- if smtp-auth -->
+         <username>%EMAILADDRESS%</username> <!-- if smtp-auth -->
             <!-- smtp-auth (RFC 2554, 4954) or other auth mechanism.
                  For values, see incoming.
                  Additional options here:
