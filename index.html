@@ -95,7 +95,7 @@ var _hmt = _hmt || [];
         <nav>
           <ul>
             <li><a href="#intro">About</a></li>
-            <li><a href="https://blog.iseki.space/link/">网上邻居</a></li>
+            <li><a href="#friends">网上邻居</a></li>
             <!--<li><a href="#elements">Elements</a></li>-->
           </ul>
         </nav>
@@ -118,9 +118,88 @@ var _hmt = _hmt || [];
                 href="https://www.pixiv.net/artworks/64711378"
                 target="_blank"
                 >PixivID: 64711378</a
-              ><br/>Thank you~~~</span
+              ><br />Thank you~~~</span
             >
           </p>
+        </article>
+        <style>
+          #friends > div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+          }
+          #friends > div > .friend-box {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+          }
+          #friends > div > .friend-box > div {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 100%;
+            overflow: hi;
+          }
+          #friends > div > .friend-box > img {
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+          }
+					#friends > a:visited{
+						color: unset;
+					}
+        </style>
+        <article id="friends">
+          <h2 class="major">网上邻居</h2>
+          <div>
+            <a href="https://counter2015.com/" target="_blank" class="friend-box">
+              <img src="https://avatars0.githubusercontent.com/u/13608862" />
+              <div>counter2015</div>
+						</a>
+            <a href="https://blog.morningp.name/" target="_blank" class="friend-box">
+              <img src="/friend_img/ogata_chieri.png" />
+              <div>MorningP</div>
+            </a>
+            <a href="https://ldeus.com/" target="_blank" class="friend-box">
+              <img
+                src="https://thirdqq.qlogo.cn/g?b=sdk&k=U6dlLtU6JdIcL4EGjZhkibg&s=100&t=1605197663"
+              />
+              <div>ldeus</div>
+            </a>
+            <a href="https://epliar.com/" target="_blank" class="friend-box">
+              <img src="https://epliar.com/img/avatar.jpg" />
+              <div>Epliar</div>
+            </a>
+            <a href="https://www.snowneko.com/" target="_blank" class="friend-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg"
+              />
+              <div>Snowneko</div>
+            </a>
+            <a href="https://blog.rxliuli.com/" target="_blank" class="friend-box">
+              <img src="https://blog.rxliuli.com/medias/avatar.jpg" />
+              <div>rxliuli</div>
+            </a>
+            <a href="https://blog.loli.top/" target="_blank" class="friend-box">
+              <img src="https://blog.loli.top/logo.png" />
+              <div>吹梦到西洲</div>
+            </a>
+            <a href="https://www.aloxaf.com/" target="_blank" class="friend-box">
+              <img src="https://avatars2.githubusercontent.com/u/17017672" />
+              <div>Aloxaf's blog</div>
+            </a>
+          </div>
+          <h3>失踪人口</h3>
+          <div>
+            <div class="friend-box">
+              <img src="https://avatars.githubusercontent.com/u/11361768" />
+              <div>上海喫茶館</div>
+            </div>
+            <div class="friend-box">
+              <img src="https://avatars3.githubusercontent.com/u/41041690" />
+              <div>ajin</div>
+            </div>
+          </div>
         </article>
 
         <!-- Elements -->
