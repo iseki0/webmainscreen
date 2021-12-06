@@ -81,8 +81,7 @@ var _hmt = _hmt || [];
       <header id="header">
         <div class="logo">
           <img
-            src="https://blog.iseki.space/img/avatarx240.png
-"
+            data-lazysrc="https://blog.iseki.space/img/avatarx240.png"
             class="logo"
           />
         </div>
@@ -145,63 +144,99 @@ var _hmt = _hmt || [];
             width: 64px;
             border-radius: 50%;
           }
-					#friends > a:visited{
-						color: unset;
-					}
+          #friends > a:visited {
+            color: unset;
+          }
         </style>
         <article id="friends">
           <h2 class="major">网上邻居</h2>
           <div>
-            <a href="https://counter2015.com/" target="_blank" class="friend-box">
-              <img src="https://avatars0.githubusercontent.com/u/13608862" />
+            <a
+              href="https://counter2015.com/"
+              target="_blank"
+              class="friend-box"
+            >
+              <img
+                data-lazysrc="https://avatars0.githubusercontent.com/u/13608862"
+              />
               <div>counter2015</div>
-						</a>
-            <a href="https://blog.morningp.name/" target="_blank" class="friend-box">
-              <img src="/friend_img/ogata_chieri.png" />
+            </a>
+            <a
+              href="https://blog.morningp.name/"
+              target="_blank"
+              class="friend-box"
+            >
+              <img data-lazysrc="/friend_img/ogata_chieri.png" />
               <div>MorningP</div>
             </a>
             <a href="https://ldeus.com/" target="_blank" class="friend-box">
               <img
-                src="https://thirdqq.qlogo.cn/g?b=sdk&k=U6dlLtU6JdIcL4EGjZhkibg&s=100&t=1605197663"
+                data-lazysrc="https://thirdqq.qlogo.cn/g?b=sdk&k=U6dlLtU6JdIcL4EGjZhkibg&s=100&t=1605197663"
               />
               <div>ldeus</div>
             </a>
             <a href="https://epliar.com/" target="_blank" class="friend-box">
-              <img src="https://epliar.com/img/avatar.jpg" />
+              <img data-lazysrc="https://epliar.com/img/avatar.jpg" />
               <div>Epliar</div>
             </a>
-            <a href="https://www.snowneko.com/" target="_blank" class="friend-box">
+            <a
+              href="https://www.snowneko.com/"
+              target="_blank"
+              class="friend-box"
+            >
               <img
-                src="https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg"
+                data-lazysrc="https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg"
               />
               <div>Snowneko</div>
             </a>
-            <a href="https://blog.rxliuli.com/" target="_blank" class="friend-box">
-              <img src="https://blog.rxliuli.com/medias/avatar.jpg" />
+            <a
+              href="https://blog.rxliuli.com/"
+              target="_blank"
+              class="friend-box"
+            >
+              <img data-lazysrc="https://blog.rxliuli.com/medias/avatar.jpg" />
               <div>rxliuli</div>
             </a>
             <a href="https://blog.loli.top/" target="_blank" class="friend-box">
-              <img src="https://blog.loli.top/logo.png" />
+              <img data-lazysrc="https://blog.loli.top/logo.png" />
               <div>吹梦到西洲</div>
             </a>
-            <a href="https://www.aloxaf.com/" target="_blank" class="friend-box">
-              <img src="https://avatars2.githubusercontent.com/u/17017672" />
+            <a
+              href="https://www.aloxaf.com/"
+              target="_blank"
+              class="friend-box"
+            >
+              <img
+                data-lazysrc="https://avatars2.githubusercontent.com/u/17017672"
+              />
               <div>Aloxaf's blog</div>
             </a>
           </div>
           <h3>失踪人口</h3>
           <div>
             <div class="friend-box">
-              <img src="https://avatars.githubusercontent.com/u/11361768" />
+              <img
+                data-lazysrc="https://avatars.githubusercontent.com/u/11361768"
+              />
               <div>上海喫茶館</div>
             </div>
             <div class="friend-box">
-              <img src="https://avatars3.githubusercontent.com/u/41041690" />
+              <img
+                data-lazysrc="https://avatars3.githubusercontent.com/u/41041690"
+              />
               <div>ajin</div>
             </div>
           </div>
         </article>
-
+        <script>
+          document.addEventListener("readystatechange", (it) => {
+            if (it.target.readyState === "complete") {
+              document.querySelectorAll("img[data-lazysrc]").forEach((it) => {
+                it.setAttribute("src", it.getAttribute("data-lazysrc"));
+              });
+            }
+          });
+        </script>
         <!-- Elements -->
         <article id="elements">
           <h2 class="major">Elements</h2>
