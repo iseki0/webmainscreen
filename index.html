@@ -71,8 +71,8 @@
       <header id="header">
         <div class="logo">
           <img
-            data-lazysrc="https://blog.iseki.space/img/avatarx240.png"
-            class="logo"
+            data-src="https://blog.iseki.space/img/avatarx240.png"
+            class="logo lazyload"
           />
         </div>
         <div class="content">
@@ -147,7 +147,7 @@
               class="friend-box"
             >
               <img
-                data-lazysrc="https://avatars0.githubusercontent.com/u/13608862"
+                class="lazyload" data-src="https://avatars0.githubusercontent.com/u/13608862"
               />
               <div>counter2015</div>
             </a>
@@ -156,17 +156,17 @@
               target="_blank"
               class="friend-box"
             >
-              <img data-lazysrc="/friend_img/ogata_chieri.png" />
+              <img class="lazyload" data-src="/friend_img/ogata_chieri.png" />
               <div>MorningP</div>
             </a>
             <a href="https://ldeus.com/" target="_blank" class="friend-box">
               <img
-                data-lazysrc="https://thirdqq.qlogo.cn/g?b=sdk&k=U6dlLtU6JdIcL4EGjZhkibg&s=100&t=1605197663"
+                class="lazyload" data-src="https://thirdqq.qlogo.cn/g?b=sdk&k=U6dlLtU6JdIcL4EGjZhkibg&s=100&t=1605197663"
               />
               <div>ldeus</div>
             </a>
             <a href="https://epliar.com/" target="_blank" class="friend-box">
-              <img data-lazysrc="https://epliar.com/img/avatar.jpg" />
+              <img class="lazyload" data-src="https://epliar.com/img/avatar.jpg" />
               <div>Epliar</div>
             </a>
             <a
@@ -175,7 +175,7 @@
               class="friend-box"
             >
               <img
-                data-lazysrc="https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg"
+                class="lazyload" data-src="https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg"
               />
               <div>Snowneko</div>
             </a>
@@ -184,11 +184,11 @@
               target="_blank"
               class="friend-box"
             >
-              <img data-lazysrc="https://blog.rxliuli.com/medias/avatar.jpg" />
+              <img class="lazyload" data-src="https://blog.rxliuli.com/medias/avatar.jpg" />
               <div>rxliuli</div>
             </a>
             <a href="https://blog.loli.top/" target="_blank" class="friend-box">
-              <img data-lazysrc="https://blog.loli.top/logo.png" />
+              <img class="lazyload" data-src="https://blog.loli.top/logo.png" />
               <div>吹梦到西洲</div>
             </a>
             <a
@@ -197,7 +197,7 @@
               class="friend-box"
             >
               <img
-                data-lazysrc="https://avatars2.githubusercontent.com/u/17017672"
+                class="lazyload" data-src="https://avatars2.githubusercontent.com/u/17017672"
               />
               <div>Aloxaf's blog</div>
             </a>
@@ -206,27 +206,18 @@
           <div>
             <div class="friend-box">
               <img
-                data-lazysrc="https://avatars.githubusercontent.com/u/11361768"
+                class="lazyload" data-src="https://avatars.githubusercontent.com/u/11361768"
               />
               <div>上海喫茶館</div>
             </div>
             <div class="friend-box">
               <img
-                data-lazysrc="https://avatars3.githubusercontent.com/u/41041690"
+                class="lazyload" data-src="https://avatars3.githubusercontent.com/u/41041690"
               />
               <div>ajin</div>
             </div>
           </div>
         </article>
-        <script>
-          document.addEventListener("readystatechange", (it) => {
-            if (it.target.readyState === "complete") {
-              document.querySelectorAll("img[data-lazysrc]").forEach((it) => {
-                it.setAttribute("src", it.getAttribute("data-lazysrc"));
-              });
-            }
-          });
-        </script>
         <!-- Elements -->
         <article id="elements">
           <h2 class="major">Elements</h2>
@@ -287,9 +278,10 @@
     <div id="bg"></div>
 
     <!-- Scripts -->
+    <script src="assets/js/lazysizes.min.js" async></script>
     <script defer src="assets/js/jquery.min.js"></script>
     <script defer src="assets/js/skel.min.js"></script>
-    <script defer src="assets/js/util.js"></script>
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/util.min.js"></script>
+    <script defer src="assets/js/main.min.js"></script>
   </body>
 </html>
